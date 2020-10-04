@@ -1,38 +1,58 @@
 .App {
+  background-color: #000000;
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.filterButton {
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.filterButton.selected {
+  background: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.song-list {
+  height: calc(100vh - 150px);
+  margin-top: 20px;
+}
+
+
+
+.song-item {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  height: 100%;
+}
+
+/* extra positioning */
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    border-radius: 50%;
+} 
+
+#heart-empty {
+  color: red;
+}
+
+#heart-full {
+  color: red;
 }

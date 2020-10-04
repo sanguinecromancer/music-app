@@ -1,0 +1,18 @@
+{
+    "env": {
+      "browser": false,
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019
+    },
+    "extends": ["eslint-config-airbnb-base"],
+    "ignorePatterns": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/tests/**",
+      "webpack.config.js",
+      "build.js"
+    ]
+  }
