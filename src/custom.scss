@@ -11,3 +11,35 @@ $body-bg: #000;
  
 // } 
 
+.title {
+  width: 35%;
+  margin-top: 10px;
+  float: left;
+  margin-left: 10px;
+  // white-space: pre;
+  
+  .songname {
+    font-weight: bold;
+    float: left;
+    // display:block;
+  }
+  .artist {
+    clear: both;
+    float: left;
+  }
+}
+
+
+.icons {
+  width: 35%;
+  margin-top: 20px;
+  float: left;
+  margin-left: 10px;
+
+  .favorite {
+    float: right;
+  }
+
+
+
+}

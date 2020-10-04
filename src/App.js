@@ -3,6 +3,7 @@ import InfiniteLoading from "react-simple-infinite-loading";
 import api from "./api";
 import "./App.css";
 import Song from './Song';
+import { TiMediaRecordOutline } from "react-icons/ti";
 
 function App() {
   
@@ -119,21 +120,29 @@ function App() {
 
   return (
     <div className="App">
-      <h1>New songs delivered every week</h1>
-     
-      <h2>Search here :</h2>
-      <div className="search-bar"> 
-        <input value={keywords} onChange={onKeywordsChange}/> 
-      </div> 
-      <div>
-        {isOpened && renderFilters()}
-        <button onClick={ showOrHideFilters }>Filter by level</button>      
+      <div className="container header">
+          <h1>New songs delivered every week</h1>
+        
+       
+          <div className="search-bar"> 
+            <input className="form-control" value={keywords} onChange={onKeywordsChange}></input>
+           
+          </div> 
+      
+          
       </div>
+      <div className="filters">
+
+            {isOpened && renderFilters()}
+            <button className="filter-by" onClick={ showOrHideFilters }>FILTER BY LEVEL</button>
+            
+        </div>
       <div className="song-list">
         <InfiniteLoading
           hasMoreItems={songCount > songs.length}
-          itemHeight={70}
+          itemHeight={90}
           loadMoreItems={onInfiniteScrollTrigger}
+          elementClassName="song-wrapper"
         >
           {songs.map((item) => (
             <Song

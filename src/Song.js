@@ -4,19 +4,26 @@ import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 
 const Song = ({ song, isFavorite, onFavoriteChange }) => {
   return (
-    <div key={song.id} className="song-item">
-      <div className="col-5">
+    <li key={song.id} className="song-item">
+      <div className="col-md-5 item-wrapper">
         <img className="thumbnail" src={song.images} alt="..."></img>
-
-              {song.artist} - {song.title}
+        <div className="col-sm-6 title">
+          <div className="songname">{song.title}</div>
+          <div className="artist">  {song.artist} </div>
+        </div>
         
-          <span className="badge badge-primary badge-pill">{song.level}</span>
+        <div className="col-sm-6 icons">
+            
+        
+          <button className="filterButton">{song.level}</button>
 
-        <button onClick={onFavoriteChange}>
+          <div className="favorite" onClick={onFavoriteChange}>
           {isFavorite ? <MdFavorite id="heart-full"/> : <MdFavoriteBorder id="heart-empty"/> } 
-        </button>
+          </div> 
+        </div>
       </div>
-    </div>
+    </li>
+
   );
 };
 
