@@ -4,7 +4,15 @@
   text-align: center;
 }
 
-
+ .col-5 {
+ 
+  
+  background-color: #000000;
+  color: grey ;
+  border: 1px solid rgb(128, 128, 0) !important;
+  border-radius: 3px !important;
+  
+} 
 
 
 .filterButton {
@@ -25,11 +33,12 @@
 
 
 .song-item {
-  height: 70px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+
+  
 }
 
 .thumbnail {

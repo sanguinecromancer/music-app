@@ -7,8 +7,8 @@ const Song = ({ song, isFavorite, onFavoriteChange }) => {
     <div key={song.id} className="song-item">
     <div className="col-5">
 
-      <li className="list-group-item d-flex justify-content-between align-items-center">
-        <div>
+      
+       
         
          <div className="thumbnail">
            <img src={song.images} alt="..."></img>
@@ -17,12 +17,12 @@ const Song = ({ song, isFavorite, onFavoriteChange }) => {
           {song.artist} - {song.title}
         
           <span className="badge badge-primary badge-pill">{song.level}</span>
-        </div>
+        
 
         <button onClick={onFavoriteChange}>
           {isFavorite ? <MdFavorite id="heart-full"/> : <MdFavoriteBorder id="heart-empty"/> } 
         </button>
-      </li>
+     
     
     </div>
   </div>
