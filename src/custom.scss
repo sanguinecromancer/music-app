@@ -3,43 +3,33 @@ $body-bg: #000;
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
-//  .list-group-item {
-//   background-color: #000000;
-//   color: grey ;
-//   border: 1px solid rgb(128, 128, 0) !important;
-//   border-radius: 3px !important;
- 
-// } 
-
 .title {
-  width: 35%;
-  margin-top: 10px;
+  margin-top: 15px;
   float: left;
   margin-left: 10px;
-  // white-space: pre;
-  
+  justify-content: center; 
+  align-items: center;
+
   .songname {
+    font-size: 12px;
     font-weight: bold;
     float: left;
-    // display:block;
+    word-break: normal;
   }
+
   .artist {
     clear: both;
     float: left;
+    font-size: 12px;
   }
 }
 
-
 .icons {
-  width: 35%;
+  width: 20%;
   margin-top: 20px;
-  float: left;
-  margin-left: 10px;
-
+  float: right;
+  margin-left: 20px;
   .favorite {
     float: right;
   }
-
-
-
 }

@@ -25,10 +25,3 @@ test('add favorites', async () => {
   expect(favorites).toBeDefined();
 });
 
-// test('delete from favorites', async () => {
-//   await api.postFavorites('5b8e471cb3984c68ed81926d').then()
-  
-//   let response = await api.deleteFromFavorites('5b8e471cb3984c68ed81926d');
-//   console.log(deleted);
-//   expect(response.statusCode).toBe(200);
-// });

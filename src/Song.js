@@ -11,8 +11,8 @@ const Song = ({ song, isFavorite, onFavoriteChange }) => {
           <div className="songname">{song.title}</div>
           <div className="artist">  {song.artist} </div>
         </div>
-        
-        <div className="col-sm-6 icons">
+       
+        <div className="col-md-6 icons">
             
         
           <button className="filterButton">{song.level}</button>

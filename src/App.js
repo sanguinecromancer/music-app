@@ -122,25 +122,21 @@ function App() {
     <div className="App">
       <div className="container header">
           <h1>New songs delivered every week</h1>
-        
-       
-          <div className="search-bar"> 
+          <div className="search-bar">         
             <input className="form-control" value={keywords} onChange={onKeywordsChange}></input>
-           
+            <span className="search-icon"></span>
           </div> 
       
           
       </div>
       <div className="filters">
-
             {isOpened && renderFilters()}
             <button className="filter-by" onClick={ showOrHideFilters }>FILTER BY LEVEL</button>
-            
         </div>
       <div className="song-list">
         <InfiniteLoading
           hasMoreItems={songCount > songs.length}
-          itemHeight={90}
+          itemHeight={70}
           loadMoreItems={onInfiniteScrollTrigger}
           elementClassName="song-wrapper"
         >
