@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 
@@ -11,19 +10,14 @@ const Song = ({ song, isFavorite, onFavoriteChange }) => {
           <div className="songname">{song.title}</div>
           <div className="artist">  {song.artist} </div>
         </div>
-       
         <div className="col-md-6 icons">
-            
-        
           <button className="filterButton">{song.level}</button>
-
           <div className="favorite" onClick={onFavoriteChange}>
           {isFavorite ? <MdFavorite id="heart-full"/> : <MdFavoriteBorder id="heart-empty"/> } 
           </div> 
         </div>
       </div>
     </li>
-
   );
 };
 
